@@ -2,7 +2,14 @@ var koa = require('koa');
 
 var app = koa();
 
-var requestTime= app.use();
+var requesetTime = function *(next){
+  var start = new Date;
+  yield next;
+  var ms = new Date - start;
+  this.set('X-Response-Time', ms + 'ms');
+};
+
+app.use(requesetTime);
 
 app.use(function *(){
     console.log(this.request);
