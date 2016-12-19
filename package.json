@@ -1,0 +1,27 @@
+{
+  "name": "learningkoa",
+  "version": "1.0.0",
+  "description": "learningkoa",
+  "main": "server.js",
+  "dependencies": {
+    "koa": "^1.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bozch/learningkoa.git"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "bozch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bozch/learningkoa/issues"
+  },
+  "homepage": "https://github.com/bozch/learningkoa#readme"
+}
